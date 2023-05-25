@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+ body{
+    background-image:url("https://medlineplus.gov/images/Diabetes_share.jpg") ;
+    justify-content: center;
+    align-items: center;
+  background-repeat: no-repeat;
+  background-size: 2000px 800px ;
+ }
+ h1{
+    text-align: right;
+    color: brown;
+    font-size: 50px;
+    margin-right: 20%;
+ }
+
+
+
+
+.btn1 {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #429de7;
+  color: black;
+  font-size: 20px;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+}
+.btn2 {
+  position: absolute;
+  top: 30%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #429de7;
+  color: black;
+  font-size: 20px;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+p{
+    margin-left: 50%;
+    font-size: 30px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+</style>
+<body>
+    <h1>Diabetes Chatbot</h1>
+    
+    <p>We can respond to any questions you may have about diabetes.</p>
+    
+    <button class="btn1"><a href="{{ url_for('login') }}">Login</a></button><br>
+    <button class="btn2"><a href="{{ url_for('register') }}">Register</a></button>
+  
+
+</body>
+
+</html>
